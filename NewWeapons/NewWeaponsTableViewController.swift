@@ -51,6 +51,65 @@ class NewWeaponsTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        weapons.remove(at: indexPath.row)
+        weaponTypes.remove(at: indexPath.row)
+        origins.remove(at: indexPath.row)
+        weaponImages.remove(at: indexPath.row)
+        favorites.remove(at: indexPath.row)
+
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delAvtion = UIContextualAction(style: .destructive, title: "delete") {
+            (_, _, completion) in
+            self.weapons.remove(at: indexPath.row)
+            self.weaponTypes.remove(at: indexPath.row)
+            self.origins.remove(at: indexPath.row)
+            self.weaponImages.remove(at: indexPath.row)
+            self.favorites.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            completion(true)
+        }
+        
+        let shareAction = UIContextualAction(style: .normal, title: "share") {
+            (_, _, completion) in
+            let text = "这是绝地求生中的：\(self.weapons[indexPath.row])!"
+            let image = UIImage(named: self.weaponImages[indexPath.row])!
+            let ac = UIActivityViewController(activityItems: [text,image], applicationActivities: nil)
+            self.present(ac, animated: true)
+            completion(true)
+        }
+        
+        shareAction.backgroundColor = UIColor.orange
+        
+        let config = UISwipeActionsConfiguration(actions: [delAvtion, shareAction])
+        
+        return config
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let favAction = UIContextualAction(style: .normal, title: "收藏") {
+            (_, _, completion) in
+            
+            self.favorites[indexPath.row] = !self.favorites[indexPath.row]
+            
+            let cell = tableView.cellForRow(at: indexPath) as! CradCell
+            
+            cell.favorite = self.favorites[indexPath.row]
+            
+            completion(true)
+        }
+        
+        favAction.image = #imageLiteral(resourceName: "fav")
+        
+        favAction.backgroundColor = UIColor.cyan
+        
+        let conlog = UISwipeActionsConfiguration(actions: [favAction])
+        return conlog
+    }
+    
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
