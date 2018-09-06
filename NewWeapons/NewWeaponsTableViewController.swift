@@ -18,6 +18,24 @@ class NewWeaponsTableViewController: UITableViewController {
     
     var weaponImages = ["aug", "awm", "crossbow", "dp28", "groza", "kar98k", "m16a4", "microuzi", "pan"]
 
+    var favorites = Array(repeating: false, count: 11)
+    
+    @IBAction func favBtnTap(_ sender: UIButton) {
+        let btnPos = sender.convert(CGPoint.zero, to: self.tableView)
+        
+//        print("\(btnPos)")
+        
+        let indexPath = tableView.indexPathForRow(at: btnPos)!
+        
+        self.favorites[indexPath.row] = !self.favorites[indexPath.row]
+        
+        let cell = tableView.cellForRow(at: indexPath) as! CradCell
+        
+        cell.favorite = self.favorites[indexPath.row]
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,8 +72,8 @@ class NewWeaponsTableViewController: UITableViewController {
         cell.nameLabel.text = weapons[indexPath.row]
         cell.typeLabel.text = weaponTypes[indexPath.row]
         cell.addressLabel.text = origins[indexPath.row]
-        
         cell.backImageView.image = UIImage(named: weaponImages[indexPath.row])
+        cell.favorite = favorites[indexPath.row]
         
         return cell
     }

@@ -26,11 +26,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="499.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gux-mF-UTL">
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gux-mF-UTL">
                                             <rect key="frame" x="36" y="31" width="303" height="438"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vhr-QO-waF">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vhr-QO-waF">
                                                     <rect key="frame" x="0.0" y="0.0" width="303" height="438"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERd-aj-XT5">
                                                     <rect key="frame" x="0.0" y="0.0" width="303" height="80"/>
@@ -45,6 +50,9 @@
                                                                     <constraint firstAttribute="width" constant="35" id="WOV-LC-esc"/>
                                                                 </constraints>
                                                                 <state key="normal" image="unfav"/>
+                                                                <connections>
+                                                                    <action selector="favBtnTap:" destination="f56-4F-gcN" eventType="touchUpInside" id="rqi-Xn-28M"/>
+                                                                </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y0T-ke-ttt">
                                                                 <rect key="frame" x="20" y="19.5" width="42" height="41"/>
@@ -70,11 +78,21 @@
                                                             <constraint firstItem="y0T-ke-ttt" firstAttribute="leading" secondItem="IMN-2O-BoK" secondAttribute="leading" constant="20" id="pcs-Ld-rTX"/>
                                                             <constraint firstItem="y0T-ke-ttt" firstAttribute="centerY" secondItem="IMN-2O-BoK" secondAttribute="centerY" id="toP-Io-6XM"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="Y5C-jO-AcK"/>
                                                     </constraints>
                                                     <blurEffect style="light"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-MT-6z4">
                                                     <rect key="frame" x="231" y="397.5" width="42" height="20.5"/>
@@ -95,6 +113,11 @@
                                                 <constraint firstItem="ERd-aj-XT5" firstAttribute="top" secondItem="gux-mF-UTL" secondAttribute="top" id="rbQ-DX-JmB"/>
                                                 <constraint firstAttribute="bottom" secondItem="rmt-MT-6z4" secondAttribute="bottom" constant="20" id="zVc-iE-0oJ"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -103,16 +126,31 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="gux-mF-UTL" secondAttribute="bottom" constant="20" id="uun-ht-CQG"/>
                                         <constraint firstItem="gux-mF-UTL" firstAttribute="top" secondItem="ZGi-9U-eLx" secondAttribute="topMargin" constant="20" id="veJ-Nv-pXa"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="addressLabel" destination="rmt-MT-6z4" id="lF0-6M-y3s"/>
                                     <outlet property="backImageView" destination="Vhr-QO-waF" id="euv-ln-Bz9"/>
-                                    <outlet property="favBtn" destination="EgW-ao-0Vn" id="06u-9v-uN0"/>
+                                    <outlet property="favBtn" destination="EgW-ao-0Vn" id="l7C-Xa-1zb"/>
                                     <outlet property="nameLabel" destination="abm-4N-q9r" id="rcW-mL-Yqs"/>
                                     <outlet property="typeLabel" destination="B20-Af-zVc" id="vf4-Vi-fsD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="f56-4F-gcN" id="ult-oa-elg"/>
                             <outlet property="delegate" destination="f56-4F-gcN" id="rVx-98-63a"/>

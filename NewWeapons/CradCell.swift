@@ -15,6 +15,16 @@ class CradCell: UITableViewCell {
     @IBOutlet weak var favBtn: UIButton!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var backImageView: UIImageView!
+    //属性：是否喜欢
+    var favorite = false {
+        willSet {
+            if newValue {
+                favBtn.setImage(#imageLiteral(resourceName: "fav"), for: .normal)
+            } else {
+                favBtn.setImage(#imageLiteral(resourceName: "unfav"), for: .normal)
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

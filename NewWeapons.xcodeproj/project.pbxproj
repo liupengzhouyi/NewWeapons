@@ -13,6 +13,7 @@
 		0626559D21414E5100E91CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0626559B21414E5100E91CE9 /* LaunchScreen.storyboard */; };
 		062655A521414E9700E91CE9 /* NewWeaponsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */; };
 		062655A721414EFC00E91CE9 /* CradCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A621414EFC00E91CE9 /* CradCell.swift */; };
+		062655A92141559700E91CE9 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A82141559700E91CE9 /* UIViewHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0626559E21414E5100E91CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeaponsTableViewController.swift; sourceTree = "<group>"; };
 		062655A621414EFC00E91CE9 /* CradCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CradCell.swift; sourceTree = "<group>"; };
+		062655A82141559700E91CE9 /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0626559E21414E5100E91CE9 /* Info.plist */,
 				062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */,
 				062655A621414EFC00E91CE9 /* CradCell.swift */,
+				062655A82141559700E91CE9 /* UIViewHelper.swift */,
 			);
 			path = NewWeapons;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				062655A521414E9700E91CE9 /* NewWeaponsTableViewController.swift in Sources */,
 				0626559321414E5000E91CE9 /* AppDelegate.swift in Sources */,
+				062655A92141559700E91CE9 /* UIViewHelper.swift in Sources */,
 				062655A721414EFC00E91CE9 /* CradCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
