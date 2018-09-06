@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0626559321414E5000E91CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0626559221414E5000E91CE9 /* AppDelegate.swift */; };
-		0626559521414E5000E91CE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0626559421414E5000E91CE9 /* ViewController.swift */; };
 		0626559821414E5000E91CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0626559621414E5000E91CE9 /* Main.storyboard */; };
 		0626559A21414E5100E91CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0626559921414E5100E91CE9 /* Assets.xcassets */; };
 		0626559D21414E5100E91CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0626559B21414E5100E91CE9 /* LaunchScreen.storyboard */; };
+		062655A521414E9700E91CE9 /* NewWeaponsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */; };
+		062655A721414EFC00E91CE9 /* CradCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A621414EFC00E91CE9 /* CradCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0626558F21414E5000E91CE9 /* NewWeapons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewWeapons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0626559221414E5000E91CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0626559421414E5000E91CE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0626559721414E5000E91CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0626559921414E5100E91CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0626559C21414E5100E91CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0626559E21414E5100E91CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeaponsTableViewController.swift; sourceTree = "<group>"; };
+		062655A621414EFC00E91CE9 /* CradCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CradCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				0626559221414E5000E91CE9 /* AppDelegate.swift */,
-				0626559421414E5000E91CE9 /* ViewController.swift */,
 				0626559621414E5000E91CE9 /* Main.storyboard */,
 				0626559921414E5100E91CE9 /* Assets.xcassets */,
 				0626559B21414E5100E91CE9 /* LaunchScreen.storyboard */,
 				0626559E21414E5100E91CE9 /* Info.plist */,
+				062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */,
+				062655A621414EFC00E91CE9 /* CradCell.swift */,
 			);
 			path = NewWeapons;
 			sourceTree = "<group>";
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0626559521414E5000E91CE9 /* ViewController.swift in Sources */,
+				062655A521414E9700E91CE9 /* NewWeaponsTableViewController.swift in Sources */,
 				0626559321414E5000E91CE9 /* AppDelegate.swift in Sources */,
+				062655A721414EFC00E91CE9 /* CradCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
