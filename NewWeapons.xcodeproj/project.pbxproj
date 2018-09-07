@@ -14,6 +14,9 @@
 		062655A521414E9700E91CE9 /* NewWeaponsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */; };
 		062655A721414EFC00E91CE9 /* CradCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A621414EFC00E91CE9 /* CradCell.swift */; };
 		062655A92141559700E91CE9 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062655A82141559700E91CE9 /* UIViewHelper.swift */; };
+		069E219721421F9100317AAC /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E219621421F9100317AAC /* Weapon.swift */; };
+		069E219B2142264600317AAC /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E219A2142264600317AAC /* DetailController.swift */; };
+		069E219D214227F900317AAC /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E219C214227F900317AAC /* DetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeaponsTableViewController.swift; sourceTree = "<group>"; };
 		062655A621414EFC00E91CE9 /* CradCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CradCell.swift; sourceTree = "<group>"; };
 		062655A82141559700E91CE9 /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
+		069E219621421F9100317AAC /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		069E219A2142264600317AAC /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		069E219C214227F900317AAC /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				062655A421414E9700E91CE9 /* NewWeaponsTableViewController.swift */,
 				062655A621414EFC00E91CE9 /* CradCell.swift */,
 				062655A82141559700E91CE9 /* UIViewHelper.swift */,
+				069E219621421F9100317AAC /* Weapon.swift */,
+				069E219A2142264600317AAC /* DetailController.swift */,
+				069E219C214227F900317AAC /* DetailCell.swift */,
 			);
 			path = NewWeapons;
 			sourceTree = "<group>";
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069E219721421F9100317AAC /* Weapon.swift in Sources */,
 				062655A521414E9700E91CE9 /* NewWeaponsTableViewController.swift in Sources */,
 				0626559321414E5000E91CE9 /* AppDelegate.swift in Sources */,
 				062655A92141559700E91CE9 /* UIViewHelper.swift in Sources */,
+				069E219B2142264600317AAC /* DetailController.swift in Sources */,
+				069E219D214227F900317AAC /* DetailCell.swift in Sources */,
 				062655A721414EFC00E91CE9 /* CradCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
